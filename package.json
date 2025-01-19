@@ -9,7 +9,8 @@
   "scripts": {
     "build": "rimraf -rf build && rollup -c",
     "prepublishOnly": "yarn build",
-    "localPublish": "yalc publish && cd example && yalc add react-native-sensitive-info --yarn && cd .."
+    "localPublish": "yalc publish && cd example && yalc add react-native-sensitive-info --yarn && cd ..",
+    "prepare": "npm run build"
   },
   "author": {
     "name": "mCodex & ClassApp",
